@@ -24,13 +24,13 @@ spring:
     oauth2:
       resourceserver:
         jwt:
-          issuer-uri: http://localhost:8081/auth/realms/microservices-realm
-          jwk-set-uri: http://localhost:8081/auth/realms/microservices-realm/protocol/openid-connect/certs
+          issuer-uri: http://localhost:9091/auth/realms/microservices-realm
+          jwk-set-uri: http://localhost:9091/auth/realms/microservices-realm/protocol/openid-connect/certs
       client:
         registration:
           keycloak:
             client-id: 'elastic-query-service'
-            client-secret: '{cipher}87191dde8d9944c470ffe0f00f17134d40f659756915af9c8a9bc5dab0b80f8a71acf1d94642151714b37017648883a6a7ca4a995db650bb734b7a60c19ed110'
+            client-secret: '{cipher}f324d661e7787e5305d661555b5b2a78e7d0145084817c56e6a2e652f929f7587d24bb5618ca9ce19eb03bb7acf01c35c98451d6b81c8b9eba619a60f4979c95'
             authorizationGrantType: client_credentials
         provider:
           keycloak:
