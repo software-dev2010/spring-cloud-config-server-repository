@@ -33,6 +33,9 @@ spring:
     driver-class-name: org.postgresql.Driver
     platform: postgres
 
+security:
+  paths-to-ignore: /api-docs
+
 kafka-config:
   bootstrap-servers: localhost:19092, localhost:29092, localhost:39092
   schema-registry-url-key: schema.registry.url
